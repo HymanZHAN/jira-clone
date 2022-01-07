@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
     "husky": ">=6",
     "lint-staged": ">=10",
     "prettier": "2.5.1"
