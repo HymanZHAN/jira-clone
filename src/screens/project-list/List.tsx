@@ -1,4 +1,11 @@
-export const List = ({ list, users }) => {
+import { Project, User } from "models";
+
+interface Props {
+  list: Project[];
+  users: User[];
+}
+
+export const List = ({ list, users }: Props) => {
   return (
     <table>
       <thead>

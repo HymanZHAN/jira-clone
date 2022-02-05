@@ -1,4 +1,17 @@
-export const SearchPanel = ({ param, setParam, users }) => {
+import { User } from "models";
+
+interface SearchParams {
+  name: string;
+  personId: string;
+}
+
+interface Props {
+  users: User[];
+  param: SearchParams;
+  setParam: (params: SearchParams) => void;
+}
+
+export const SearchPanel = ({ param, setParam, users }: Props) => {
   return (
     <form>
       <div>
