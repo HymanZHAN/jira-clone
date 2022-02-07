@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { List } from "./List";
 import { SearchPanel } from "./SearchPanel";
-import { stringify } from "qs";
 import { cleanObject, useDebounce } from "utils";
 import { useHttp } from "services";
 
@@ -26,7 +25,7 @@ export const ProjectListScreen = () => {
   return (
     <div>
       <SearchPanel param={param} setParam={setParam} users={users} />
-      <List list={list} users={users} />
+      <List projects={list} users={users} />
     </div>
   );
 };
