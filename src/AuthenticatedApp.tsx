@@ -1,4 +1,4 @@
-import { useAuth } from "context/AuthContext";
+import { useAuth } from "contexts/AuthContext";
 import { ProjectListScreen } from "screens/project-list/Index";
 
 export const AuthenticatedApp = () => {

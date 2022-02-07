@@ -1,5 +1,5 @@
 import { AuthenticatedApp } from "AuthenticatedApp";
-import { useAuth } from "context/AuthContext";
+import { useAuth } from "contexts/AuthContext";
 import { UnauthenticatedApp } from "unauthenticated-app/Index";
 
 function App() {
