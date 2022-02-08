@@ -11,16 +11,18 @@ export const ProjectListScreen = () => {
     name: "",
     personId: "",
   });
-  const debouncedParam = useDebounce(param, 2000);
+  const debouncedParam = useDebounce(param, 1000);
   const [list, setList] = useState([]);
   const client = useHttp();
 
   useEffect(() => {
     client("projects", { data: cleanObject(debouncedParam) }).then(setList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedParam]);
 
   useEffect(() => {
     client("users").then(setUsers);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -33,11 +33,13 @@ export const SearchPanel = ({ param, setParam, users }: Props) => {
           value={param.personId}
           onChange={(value) => setParam({ ...param, personId: value })}
         >
-          <Select.Option value={""}>负责人</Select.Option>
+          <Select.Option value={""} key={0}>
+            负责人
+          </Select.Option>
           {users.map((user) => (
-            <option value={user.id} key={user.id}>
+            <Select.Option value={user.id} key={user.id}>
               {user.name}
-            </option>
+            </Select.Option>
           ))}
         </Select>
       </Form.Item>

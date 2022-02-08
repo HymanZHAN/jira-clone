@@ -10,6 +10,7 @@ interface Props {
 export const List = ({ projects, users }: Props) => {
   return (
     <Table
+      rowKey={"id"}
       pagination={false}
       columns={[
         {

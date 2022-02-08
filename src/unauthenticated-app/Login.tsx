@@ -1,5 +1,5 @@
 import { useAuth } from "contexts/AuthContext";
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 import { LongButton } from "./Index";
 
 export const LoginScreen = () => {
